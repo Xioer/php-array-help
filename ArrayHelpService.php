@@ -130,7 +130,8 @@ class ArrayHelpService
      *                 array('uId' => '1', 'data' => 'test'),
      *                 array('uId' => '2', 'data' => 'test2')
      *                )
-     * Util_Array::rebuildByCol($a, 'uId');
+     * ArrayHelpService::rebuildByCol($a, 'uId');
+     * 会得到：
      * array(
      *       '1' => array('uId' => '1', 'data' => 'test'),
      *       '2' => array('uId' => '2', 'data' => 'test2')
@@ -171,7 +172,8 @@ class ArrayHelpService
      *                 array('uId' => '2', 'data' => 'test2')
      *                array('uId' => 1, 'data' => 'test2')
      *                )
-     * Util_Array::rebuildByCol($a, 'uId');
+     * ArrayHelpService::rebuildByCol($a, 'uId');
+     * 会得到：
      * array(
      *       '1' => array(array('uId' => '1', 'data' => 'test'), array('uId)=>
      *       '2' => array('uId' => '2', 'data' => 'test2')
@@ -339,7 +341,7 @@ class ArrayHelpService
      *     array('id'=>4,'name'=>'a','age'=>10),
      * )
      *
-     * 使用方式 Ap_Util_Array::getValues($list,['id','name'])
+     * 使用方式 ArrayHelpService::getValues($list,['id','name'])
      * $list = array(
      *     array('id'=>1,'name'=>'a'),
      *     array('id'=>2,'name'=>'a'),
