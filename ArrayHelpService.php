@@ -214,7 +214,7 @@ class ArrayHelpService
      * @return array
      * @author lidy 2018年7月17日18:35:39
      */
-    public static function left_join_array(array $left_array, array $right_array, $left_field, $right_field = NULL) {
+    public static function leftJoinRrray(array $left_array, array $right_array, $left_field, $right_field = NULL) {
         $result = array();
         //右数组要连接的字段名为空情况
         if (empty($right_field)) {
@@ -252,7 +252,7 @@ class ArrayHelpService
      * @param string $value
      * @return array
      */
-    public static function find_by_value($array, $index, $value) {
+    public static function findByValue($array, $index, $value) {
     
         $newarray = array();
         if (is_array($array) && count($array) > 0) {
@@ -300,7 +300,7 @@ class ArrayHelpService
      * @return array
      * @author lidy 2018年8月10日16:39:42
      */
-    public function list_sort_by($list, $field, $sortby = 'asc')
+    public function listSortBy($list, $field, $sortby = 'asc')
     {
         if (is_array($list)) {
             $refer = $resultSet = array();
