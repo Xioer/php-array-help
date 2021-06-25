@@ -14,6 +14,8 @@ git clone https://gitee.com/githubli/php-array-help.git
 #### 使用说明
 1、可以直接在文件当中复制方法进行使用；
 >ArrayHelpService::rebuildByCol($a, 'uId');
+
+
 2、也可以把文件引用进来使用：
 ```
      * 根据某个字段把该字段的值当数组的KEY重组数组
